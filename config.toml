@@ -1,4 +1,4 @@
-baseURL = "https://blog.insightstream.dev/"
+baseURL = "https://insightstream.dev/"
 languageCode = "en-us"
 title = "blog - insightstream"
 theme = "hyde-hyde"
