@@ -1,4 +1,4 @@
-baseURL = "https://insightstream.dev/"
+baseURL = "https://blog.insightstream.dev/"
 languageCode = "en-us"
 title = "blog - insightstream"
 theme = "hyde-hyde"
@@ -8,7 +8,7 @@ summarylength = 20
 paginate = 10
 
 # gitinfo
-# enableGitInfo = true
+enableGitInfo = true
 
 ## Site Settings
 [params]
@@ -23,7 +23,7 @@ paginate = 10
     copyright = "nareshganesan"
     since = 2021
     license = "MIT"
-    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    licenseURL = "https://github.com/nareshganesan/blog.insightstream/blob/main/LICENSE"
     showBuiltWith = true
 
     # https://highlightjs.org
