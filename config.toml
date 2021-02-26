@@ -1,0 +1,108 @@
+baseURL = "https://insightstream.dev/"
+languageCode = "en-us"
+title = "blog - insightstream"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+summarylength = 20
+paginate = 10
+
+# gitinfo
+# enableGitInfo = true
+
+## Site Settings
+[params]
+    author = "Naresh"
+    title = "InsightStream"
+    description = "Stream of insights on different topics"
+    # authorimage = "/img/hugo.png"
+    dateformat = "Jan 2, 2006"
+
+    # sidebar, copyright & license
+    logoimage = "/img/insightstream.png"
+    copyright = "nareshganesan"
+    since = 2021
+    license = "MIT"
+    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "github"
+
+## Social Accounts
+[params.social]
+    github = "nareshganesan"
+    medium = "nareshganesan"
+    linkedin = "naresh-ganesan"
+    stackoverflow = "2923608/nareshkumarganesan"
+    email = "nareshganesan@insightstream.dev"
+    hackernews = "nareshganesan"
+    # pgpkey = "<path-to-your-key-in-/static>"
+
+## code
+[params.info]
+    related = true # Includes related articles at the bottom of the article
+    codeCopy = true # Add copy button above code blocks
+    taxonomiesCount = true # Add taxonomies count
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "Portfolio"
+    identifier = "portfolio"
+    weight = 200
+    url = "/portfolio/"
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 300
+    url = "/about/"
+
+[frontmatter]
+    date = ["date", "publishDate", "lastmod"]
+    lastmod = [":git", "lastmod", "date", "publishDate"]
+    publishDate = ["publishDate", "date"]
+    expiryDate = ["expiryDate"]
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = false
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+        keepCSS2 = true
+        precision = 0
+    [minify.tdewolff.html]
+        keepComments = false
+        keepConditionalComments = true
+        keepDefaultAttrVals = true
+        keepDocumentTags = true
+        keepEndTags = true
+        keepQuotes = false
+        keepWhitespace = false
+    [minify.tdewolff.js]
+        keepVarNames = false
+        precision = 0
+    [minify.tdewolff.json]
+        precision = 0
+    [minify.tdewolff.svg]
+        precision = 0
+    [minify.tdewolff.xml]
+        keepWhitespace = false
+
+[permalinks]
+    posts = "/:year/:month/:title/"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    series = "series"
