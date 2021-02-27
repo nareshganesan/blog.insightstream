@@ -69,35 +69,36 @@ enableGitInfo = true
     publishDate = ["publishDate", "date"]
     expiryDate = ["expiryDate"]
 
+# ugligy / minify
 [minify]
-  disableCSS = false
-  disableHTML = false
-  disableJS = false
-  disableJSON = false
-  disableSVG = false
-  disableXML = false
-  minifyOutput = false
-  [minify.tdewolff]
-    [minify.tdewolff.css]
-        keepCSS2 = true
-        precision = 0
-    [minify.tdewolff.html]
-        keepComments = false
-        keepConditionalComments = true
-        keepDefaultAttrVals = true
-        keepDocumentTags = true
-        keepEndTags = true
-        keepQuotes = false
-        keepWhitespace = false
-    [minify.tdewolff.js]
-        keepVarNames = false
-        precision = 0
-    [minify.tdewolff.json]
-        precision = 0
-    [minify.tdewolff.svg]
-        precision = 0
-    [minify.tdewolff.xml]
-        keepWhitespace = false
+    disableCSS = false
+    disableHTML = false
+    disableJS = false
+    disableJSON = false
+    disableSVG = false
+    disableXML = false
+    minifyOutput = false
+    [minify.tdewolff]
+        [minify.tdewolff.css]
+            keepCSS2 = true
+            precision = 0
+        [minify.tdewolff.html]
+            keepComments = false
+            keepConditionalComments = true
+            keepDefaultAttrVals = true
+            keepDocumentTags = true
+            keepEndTags = true
+            keepQuotes = false
+            keepWhitespace = false
+        [minify.tdewolff.js]
+            keepVarNames = false
+            precision = 0
+        [minify.tdewolff.json]
+            precision = 0
+        [minify.tdewolff.svg]
+            precision = 0
+        [minify.tdewolff.xml]
+            keepWhitespace = false
 
 [permalinks]
     posts = "/:year/:month/:title/"
@@ -106,3 +107,18 @@ enableGitInfo = true
     tag = "tags"
     category = "categories"
     series = "series"
+
+# privacy configurations
+[privacy]
+    [privacy.disqus]
+        disable = true
+    [privacy.googleAnalytics]
+        disable = true
+    [privacy.instagram]
+        disable = true
+    [privacy.twitter]
+        disable = true
+    [privacy.vimeo]
+        disable = true
+    [privacy.youtube]
+        disable = true
