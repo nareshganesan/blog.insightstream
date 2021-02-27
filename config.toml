@@ -64,7 +64,7 @@ enableGitInfo = true
     url = "/about/"
 
 [frontmatter]
-    date = ["date", "publishDate", "lastmod"]
+    date = [":git", "date", "publishDate", "lastmod"]
     lastmod = [":git", "lastmod", "date", "publishDate"]
     publishDate = ["publishDate", "date"]
     expiryDate = ["expiryDate"]
