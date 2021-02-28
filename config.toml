@@ -30,6 +30,9 @@ enableGitInfo = true
     highlightjs = true
     highlightjsstyle = "github"
 
+    # related posts
+    relatedPosts = true
+
 ## Social Accounts
 [params.social]
     github = "nareshganesan"
@@ -42,7 +45,7 @@ enableGitInfo = true
 
 ## code
 [params.info]
-    related = true # Includes related articles at the bottom of the article
+    # related = true # Includes related articles at the bottom of the article
     codeCopy = true # Add copy button above code blocks
     taxonomiesCount = true # Add taxonomies count
 
@@ -107,6 +110,20 @@ enableGitInfo = true
     tag = "tags"
     category = "categories"
     series = "series"
+
+# related content
+[related]
+    includeNewer = true
+    threshold = 80
+    toLower = false
+
+    [[related.indices]]
+        name = "tags"
+        weight = 100
+
+    [[related.indices]]
+        name = "categories"
+        weight = 100
 
 # privacy configurations
 [privacy]

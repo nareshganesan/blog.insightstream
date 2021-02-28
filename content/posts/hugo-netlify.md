@@ -1,7 +1,8 @@
 ---
 title: "Hugo + Netlify = awesome!"
 date: 2021-02-26T00:54:35+05:30
-lastmod:
+categories: ["hugo", "ci/cd", "jamstack"]
+tags: ["hugo", "netlify", "ci/cd", "jamstack"]
 draft: false
 ---
 
