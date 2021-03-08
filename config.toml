@@ -1,129 +1,352 @@
 baseURL = "https://insightstream.dev/"
-languageCode = "en-us"
-title = "blog - insightstream"
-theme = "hyde-hyde"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "blog | insightstream.dev"
 
-## Hugo Built-in Features
-summarylength = 20
-paginate = 10
-
-# gitinfo
+# Change the default theme to be use when building the site with Hugo
+theme = "uBlogger"
+# whether to use robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
 enableGitInfo = true
-
-## Site Settings
-[params]
-    author = "Naresh"
-    title = "InsightStream"
-    description = "Stream of insights on different topics"
-    # authorimage = "/img/hugo.png"
-    dateformat = "Jan 2, 2006"
-
-    # sidebar, copyright & license
-    logoimage = "/img/insightstream.png"
-    copyright = "nareshganesan"
-    since = 2021
-    license = "MIT"
-    licenseURL = "https://github.com/nareshganesan/blog.insightstream/blob/main/LICENSE"
-    showBuiltWith = true
-
-    # https://highlightjs.org
-    highlightjs = true
-    highlightjsstyle = "github"
-
-    # related posts
-    relatedPosts = true
-
-## Social Accounts
-[params.social]
-    github = "nareshganesan"
-    medium = "nareshganesan"
-    linkedin = "naresh-ganesan"
-    stackoverflow = "2923608/nareshkumarganesan"
-    email = "nareshganesan@insightstream.dev"
-    hackernews = "nareshganesan"
-    # pgpkey = "<path-to-your-key-in-/static>"
-
-## code
-[params.info]
-    # related = true # Includes related articles at the bottom of the article
-    codeCopy = true # Add copy button above code blocks
-    taxonomiesCount = true # Add taxonomies count
-
-## Main Menu
-[[menu.main]]
-    name = "Posts"
-    weight = 100
-    identifier = "posts"
-    url = "/posts/"
-[[menu.main]]
-    name = "Portfolio"
-    identifier = "portfolio"
-    weight = 200
-    url = "/portfolio/"
-[[menu.main]]
-    name = "About"
-    identifier = "about"
-    weight = 300
-    url = "/about/"
+# whether to use emoji code
+enableEmoji = true
+# content summary length
+summarylength = 5
 
 [frontmatter]
-    date = [":git", "date", "publishDate", "lastmod"]
-    lastmod = [":git", "lastmod", "date", "publishDate"]
-    publishDate = ["publishDate", "date"]
-    expiryDate = ["expiryDate"]
-
-# ugligy / minify
-[minify]
-    disableCSS = false
-    disableHTML = false
-    disableJS = false
-    disableJSON = false
-    disableSVG = false
-    disableXML = false
-    minifyOutput = false
-    [minify.tdewolff]
-        [minify.tdewolff.css]
-            keepCSS2 = true
-            precision = 0
-        [minify.tdewolff.html]
-            keepComments = false
-            keepConditionalComments = true
-            keepDefaultAttrVals = true
-            keepDocumentTags = true
-            keepEndTags = true
-            keepQuotes = false
-            keepWhitespace = false
-        [minify.tdewolff.js]
-            keepVarNames = false
-            precision = 0
-        [minify.tdewolff.json]
-            precision = 0
-        [minify.tdewolff.svg]
-            precision = 0
-        [minify.tdewolff.xml]
-            keepWhitespace = false
-
-[permalinks]
-    posts = "/:year/:month/:title/"
+  date = [":git", "date", "publishDate", "lastmod"]
+  lastmod = [":git", "lastmod", ":fileModTime", ":default"]
+  publishDate = ["publishDate", "date"]
+  expiryDate = ["expiryDate"]
 
 [taxonomies]
-    tag = "tags"
-    category = "categories"
-    series = "series"
+  category = "categories"
+  tag = "tags"
+  projects = "projects"
 
-# related content
-[related]
-    includeNewer = true
-    threshold = 80
-    toLower = false
+[Permalinks]
+  posts = ":year/:month/:filename"
 
-    [[related.indices]]
-        name = "tags"
-        weight = 100
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
-    [[related.indices]]
-        name = "categories"
-        weight = 100
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[languages]
+  [languages.en]
+    weight = 1
+    # language code
+    languageCode = "en"
+    # language name
+    languageName = "English"
+    # whether to include Chinese/Japanese/Korean
+    hasCJKLanguage = false
+    # default amount of posts in each pages
+    paginate = 12
+    # copyright description used only for seo schema
+    # copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+    # Menu config
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        # you can add extra information before the name (HTML format is supported), such as icons
+        pre = ""
+        # you can add extra information after the name (HTML format is supported), such as icons
+        post = ""
+        name = "Posts"
+        url = "/posts/"
+        # title will be shown when you hover on this menu link.
+        title = ""
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "Tags"
+        url = "/tags/"
+        title = ""
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "Categories"
+        url = "/categories/"
+        title = ""
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = "Projects"
+        pre = ""
+        post = ""
+        name = "Projects"
+        url = "/projects/"
+        title = ""
+        weight = 4
+      [[languages.en.menu.main]]
+        identifier = "about"
+        pre = ""
+        post = ""
+        name = "About"
+        url = "/about/"
+        title = ""
+        weight = 5
+      [[languages.en.menu.main]]
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw'></i>"
+        post = ""
+        name = ""
+        url = "https://github.com/nareshganesan/"
+        title = "GitHub"
+        weight = 6
+    [languages.en.params]
+      # site description
+      description = "Blog | insightstream"
+      # site keywords
+      keywords = ["insightstream", "nareshganesan", "insights", "blog", "naresh", "posts"]
+      # App icon config
+      [languages.en.params.app]
+        # optional site title override for the app when added to an iOS home screen or Android launcher
+        title = "Blog | insightstream"
+        # whether to omit favicon resource links
+        noFavicon = false
+        # modern SVG favicon to use in place of older style .png and .ico files
+        svgFavicon = "/img/favicon.png"
+        # Android browser theme color
+        themeColor = "#ffffff"
+        # Safari mask icon color
+        iconColor = "#5bbad5"
+        # Windows v8-10 tile color
+        tileColor = "#da532c"
+      # Search config
+      [languages.en.params.search]
+        enable = true
+        # type of search engine ("lunr", "algolia")
+        type = "lunr"
+        # max index length of the chunked content
+        contentLength = 4000
+        # placeholder of the search bar
+        placeholder = ""
+        # max number of results length
+        maxResultLength = 10
+        # snippet length of the result
+        snippetLength = 30
+        # HTML tag name of the highlight part in results
+        highlightTag = "em"
+        # whether to use the absolute URL based on the baseURL in search index
+        absoluteURL = false
+
+      # Home page config
+      [languages.en.params.home]
+        # amount of RSS pages
+        rss = 10
+        # Home page profile
+        [languages.en.params.home.profile]
+          enable = true
+          # Gravatar Email for preferred avatar in home page
+          gravatarEmail = ""
+          # URL of avatar shown in home page
+          avatarURL = "/img/insightstream.png"
+          # title shown in home page (HTML format is supported)
+          title = "Blog | insightstream.dev"
+          # subtitle shown in home page (HTML format is supported)
+          subtitle = "Stream of insights on different topics!"
+          # whether to use typeit animation for subtitle
+          # typeit = true
+          # whether to show social links
+          social = true
+          # disclaimer (HTML format is supported)
+          disclaimer = ""
+        # Home page posts
+        [languages.en.params.home.posts]
+          enable = true
+          # special amount of posts in each home posts page
+          paginate = 10
+      # Social config in home page
+      [languages.en.params.social]
+        GitHub = "nareshganesan"
+        Linkedin = "naresh-ganesan"
+        Medium = "@nareshkumarganesan"
+        Gitlab = "nareshganesan"
+        Quora = ""
+        Keybase = ""
+        Stackoverflow = "2923608/nareshkumarganesan"
+        Hackernews = "nareshganesan"
+        Kickstarter = ""
+        Angellist = ""
+        Behance = ""
+        Dribbble = ""
+        Email = "nareshganesan@insightstream.dev"
+        RSS = true
+
+
+
+[params]
+  # uBlogger theme version
+  version = "1.3.X"
+  # site description
+  description = "Stream of insights on different topics"
+  # site keywords
+  keywords = ["insightstream", "nareshganesan", "insights", "blog", "naresh", "posts"]
+  # site default theme ("light", "dark", "auto")
+  defaultTheme = "auto"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = "https://github.com/nareshganesan"
+  # uBlogger NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
+  # ("sha256", "sha384", "sha512", "md5")
+  fingerprint = ""
+  # uBlogger NEW | 0.2.0 date format
+  dateFormat = "2006-01-02"
+  # website images for Open Graph and Twitter Cards
+  images = ["/img/insightstream.png"]
+  author = "NareshGanesan"
+  authorLink = "https://insightstream.dev/about"
+  
+  # uBlogger NEW | 0.2.0 App icon config
+  [params.app]
+    # optional site title override for the app when added to an iOS home screen or Android launcher
+    title = "insightstream.dev"
+    # whether to omit favicon resource links
+    noFavicon = false
+    # modern SVG favicon to use in place of older style .png and .ico files
+    svgFavicon = "/img/favicon.png"
+    # Android browser theme color
+    themeColor = "#ffffff"
+    # Safari mask icon color
+    iconColor = "#5bbad5"
+    # Windows v8-10 tile color
+    tileColor = "#da532c"
+
+  # uBlogger NEW | 0.2.0 Search config
+  [params.search]
+    enable = true
+    # type of search engine ("lunr", "algolia")
+    type = "lunr"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    # uBlogger NEW | 0.2.1 max number of results length
+    maxResultLength = 10
+    # uBlogger NEW | 0.2.3 snippet length of the result
+    snippetLength = 30
+    # uBlogger NEW | 0.2.1 HTML tag name of the highlight part in results
+    highlightTag = "em"
+
+  # Page config
+  [params.page]
+    # whether to hide a page from home page
+    hiddenFromHomePage = false
+    # whether to hide a page from search results
+    hiddenFromSearch = false
+    # whether to enable twemoji
+    twemoji = false
+    # whether to enable lightgallery
+    lightgallery = true
+    # whether to enable the ruby extended syntax
+    ruby = true
+    # whether to enable the fraction extended syntax
+    fraction = true
+    # whether to enable the fontawesome extended syntax
+    fontawesome = true
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown = true
+    # whether to show the full text content in RSS
+    rssFullText = false
+    # Table of the contents config
+    [params.page.toc]
+      # whether to enable the table of the contents
+      enable = true
+      # whether to keep the static table of the contents in front of the post
+      keepStatic = false
+      # whether to make the table of the contents in the sidebar automatically collapsed
+      auto = true
+    # Code config
+    [params.page.code]
+      # whether to show the copy button of the code block
+      copy = true
+      # the maximum number of lines of displayed code by default
+      maxShownLines = 20
+    # KaTeX mathematical formulas config (KaTeX https://katex.org/)
+    [params.page.math]
+      enable = false
+      # default block delimiter is $$ ... $$ and \\[ ... \\]
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      # default inline delimiter is $ ... $ and \\( ... \\)
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      # KaTeX extension copy_tex
+      copyTex = true
+      # KaTeX extension mhchem
+      mhchem = true
+
+  # uBlogger NEW | 0.2.0 header config
+  [params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+    # Header title config
+    [params.header.title]
+      # URL of the LOGO
+      # logo = "/img/insightstream.png"
+      # title name
+      name = "insightstream.dev"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      # pre = "<i class='fas fa-pencil-alt fa-fw'></i>"
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      # whether to use typeit animation for title name
+      # typeit = true
+
+  # Footer config
+  [params.footer]
+    enable = false
+    # Custom content (HTML format is supported)
+    custom = ''
+    # whether to show Hugo and theme info
+    hugo = true
+    # whether to show copyright info
+    copyright = true
+    # whether to show the author
+    author = true
+    # site creation time
+    since = 2021
+    # license info (HTML format is supported)
+    # license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      unsafe = true
+  # Table Of Contents settings
+  [markup.tableOfContents]
+    startLevel = 2
 
 # privacy configurations
 [privacy]

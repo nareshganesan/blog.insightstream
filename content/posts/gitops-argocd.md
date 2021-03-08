@@ -1,7 +1,8 @@
 ---
 title: "GitOps using ArgoCD"
 date: 2021-02-26T14:46:20+05:30
-draft: false
+lastmod: ""
+draft: true
 categories: ["k8s", "ci/cd"]
 tags: ["ArgoCD", "k8s", "ci/cd"]
 ---
