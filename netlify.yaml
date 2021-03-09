@@ -1,6 +1,6 @@
 [build]
-    publish = "themes/uBlogger/exampleSite/public"
-    command = "cd themes/uBlogger/exampleSite && hugo --themesDir ../.."
+    publish = "public"
+    command = "hugo --themesDir themes/uBlogger"
 
 [build.environment]
     HUGO_VERSION = "0.81.0"
