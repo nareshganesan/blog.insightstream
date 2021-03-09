@@ -2,7 +2,7 @@
 title: "Mongo Data Modeling"
 date: 2021-03-04T00:18:07+05:30
 lastmod: ""
-draft: true
+draft: false
 categories: ["Mongo", "design", "NoSQL"]
 tags: ["Mongo", "NoSQL", "database", "design"]
 resources:

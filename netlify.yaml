@@ -1,10 +1,10 @@
 [build]
     publish = "public"
-    command = "hugo --gc --minify"
+    command = "hugo --gc --minify --themesDir themes/uBlogger"
 
 [build.environment]
     HUGO_VERSION = "0.81.0"
-    HUGO_THEME = "uBlogger"
+    HUGO_THEME = "repo"
     HUGO_BASEURL = "https://insightstream.dev"
 
 [context.production.environment]
