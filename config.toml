@@ -32,6 +32,16 @@ summarylength = 5
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  taxonomyTerm = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+
+
+# Options to make output .md files
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
 
 [sitemap]
   changefreq = "weekly"
