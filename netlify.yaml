@@ -3,7 +3,7 @@
     command = "hugo --themesDir themes/uBlogger"
 
 [build.environment]
-    HUGO_VERSION = "0.81.0/extended"
+    HUGO_VERSION = "0.81.0"
     HUGO_THEME = "repo"
     HUGO_BASEURL = "https://insightstream.dev"
 
