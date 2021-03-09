@@ -15,6 +15,7 @@ Hugo and Netlify have really simplified the job for creating a website (static) 
 - designer portfolio
 - blog for business
 - documentation site for tools
+- Wiki docs
 
 {{< /admonition >}}
 
