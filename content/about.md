@@ -9,25 +9,45 @@ draft: false
     </a></div><figcaption class="image-caption">Naresh Ganesan</figcaption>
 </figure>
 
-Passionate engineer/researcher, who loves to find simple solutions to challenging problems. Love to solve challenging real-world problems. At present, building an awesome SAAS product using k8s @ oneDPO. Key expertise on the following topics.
+Passionate engineer, likes research and solving real-world problems. Had the wonderful opportunity to do Masters in Management Information Systems from University of Arizona, Tucson. Some of softwares which I have built in the past for companies range from OCR for Cheques/Goverment ID, Virtual Tryon application, AI Inferencing engine for Video surveillance product using kubeflow, Video streaming pipeline using DeepStream SDK, Automated Named Entity Recognition for Structured and Unstructured documents. At present, building an awesome SAAS product using k8s @ oneDPO.
+
+### Expertise
 
 - Algorithm design
 - Natural Language Processing
 - Deep learning
-- kubernetes
+- Kubernetes
 - Architecure design
 
-Tools / frameworks used
+### Kubernetes tools
+
+- Kubeflow
+- Istio
+- ArgoCD
+- Jaeger / Zipkin
+
+### Deep learning tools
 
 - Pytorch
 - Tensorflow
 - Keras
-- kubeflow
-- istio
-- ELK stack
-- Spacy
-- Kafka
 - Tessarect
+
+### NLP tools
+
+- Spacy
+- Flair
+- Presidio
+- NLTK
+
+### Computer Vision tools
+
+- OpenCV
+- DLib
+
+### Streaming tools
+
+- Kafka
 - Gstreamer
 - Deepstream SDK
 

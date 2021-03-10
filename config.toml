@@ -6,7 +6,7 @@ languageCode = "en"
 title = "blog | insightstream.dev"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "uBlogger"
+theme = "LoveIt"
 # whether to use robots.txt
 enableRobotsTXT = true
 # whether to use git commit log
@@ -15,6 +15,11 @@ enableGitInfo = true
 enableEmoji = true
 # content summary length
 summarylength = 5
+
+[author]
+  name = "Naresh Ganesan"
+  email = "nareshganesan@insightstream.dev"
+  link = "https://github.com/nareshganesan"
 
 [frontmatter]
   date = [":git", "date", "publishDate", "lastmod"]
@@ -60,7 +65,7 @@ summarylength = 5
     # default amount of posts in each pages
     paginate = 12
     # copyright description used only for seo schema
-    # copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+    copyright = "This work is licensed under MIT"
     # Menu config
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -111,7 +116,7 @@ summarylength = 5
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
         name = ""
-        url = "https://github.com/nareshganesan/"
+        url = "https://github.com/nareshganesan/blog.insightstream"
         title = "GitHub"
         weight = 6
     [languages.en.params]
@@ -165,7 +170,7 @@ summarylength = 5
           # title shown in home page (HTML format is supported)
           title = "Blog | insightstream.dev"
           # subtitle shown in home page (HTML format is supported)
-          subtitle = "Stream of insights on different topics!"
+          subtitle = "Stream of insights!"
           # whether to use typeit animation for subtitle
           # typeit = true
           # whether to show social links
@@ -198,9 +203,9 @@ summarylength = 5
 
 [params]
   # uBlogger theme version
-  version = "1.3.X"
+  version = "0.2.X"
   # site description
-  description = "Stream of insights on different topics"
+  description = "Stream of insights!"
   # site keywords
   keywords = ["insightstream", "nareshganesan", "insights", "blog", "naresh", "posts"]
   # site default theme ("light", "dark", "auto")
@@ -214,8 +219,8 @@ summarylength = 5
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
   images = ["/img/insightstream.png"]
-  author = "NareshGanesan"
-  authorLink = "https://insightstream.dev/about"
+  # author = "NareshGanesan"
+  # authorLink = "https://insightstream.dev/about"
   
   # uBlogger NEW | 0.2.0 App icon config
   [params.app]
@@ -281,7 +286,7 @@ summarylength = 5
       # whether to show the copy button of the code block
       copy = true
       # the maximum number of lines of displayed code by default
-      maxShownLines = 20
+      maxShownLines = 30
     # KaTeX mathematical formulas config (KaTeX https://katex.org/)
     [params.page.math]
       enable = false
@@ -295,7 +300,29 @@ summarylength = 5
       copyTex = true
       # KaTeX extension mhchem
       mhchem = true
-
+    [params.page.comment]
+      enable = true
+      # Disqus comment config (https://disqus.com/)
+      [params.page.comment.disqus]
+        enable = true
+        # Disqus shortname to use Disqus in posts
+        shortname = "nareshkumarganesan"
+  # Section (all posts) page config
+  [params.section]
+    # special amount of posts in each section page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
+  # List (category or tag) page config
+  [params.list]
+    # special amount of posts in each list page
+    paginate = 5
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
   # uBlogger NEW | 0.2.0 header config
   [params.header]
     # desktop header mode ("fixed", "normal", "auto")
@@ -305,7 +332,7 @@ summarylength = 5
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      # logo = "/img/insightstream.png"
+      logo = "/img/insightstream.png"
       # title name
       name = "insightstream.dev"
       # you can add extra information before the name (HTML format is supported), such as icons
@@ -317,7 +344,7 @@ summarylength = 5
 
   # Footer config
   [params.footer]
-    enable = false
+    enable = true
     # Custom content (HTML format is supported)
     custom = ''
     # whether to show Hugo and theme info
@@ -329,7 +356,7 @@ summarylength = 5
     # site creation time
     since = 2021
     # license info (HTML format is supported)
-    # license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    license= '<a rel="license external nofollow noopener noreffer" href="https://github.com/nareshganesan/blog.insightstream/blob/main/LICENSE" target="_blank">MIT</a>'
 
 
 # Markup related configuration in Hugo
