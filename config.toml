@@ -19,7 +19,7 @@ summarylength = 5
 [author]
   name = "Naresh Ganesan"
   email = "nareshganesan@insightstream.dev"
-  link = "https://github.com/nareshganesan"
+  link = "https://github.com/nareshganesan/blog.insightstream"
 
 [frontmatter]
   date = [":git", "date", "publishDate", "lastmod"]
@@ -187,15 +187,15 @@ summarylength = 5
         GitHub = "nareshganesan"
         Linkedin = "naresh-ganesan"
         Medium = "@nareshkumarganesan"
-        Gitlab = "nareshganesan"
-        Quora = ""
-        Keybase = ""
-        Stackoverflow = "2923608/nareshkumarganesan"
+        # Gitlab = "nareshganesan"
+        # Quora = ""
+        # Keybase = ""
+        # Stackoverflow = "2923608/nareshkumarganesan"
         Hackernews = "nareshganesan"
-        Kickstarter = ""
-        Angellist = ""
-        Behance = ""
-        Dribbble = ""
+        # Kickstarter = ""
+        # Angellist = ""
+        # Behance = ""
+        # Dribbble = ""
         Email = "nareshganesan@insightstream.dev"
         RSS = true
 
@@ -211,7 +211,7 @@ summarylength = 5
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/nareshganesan"
+  gitRepo = "https://github.com/nareshganesan/blog.insightstream"
   # uBlogger NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
   # ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
