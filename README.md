@@ -1,5 +1,7 @@
 # blog.insightstream
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4a3d386c-0a5e-45f7-8e27-811dad4110d2/deploy-status)](https://app.netlify.com/sites/insightstreamdev/deploys)
+
 ## installation
 
 ```bash
