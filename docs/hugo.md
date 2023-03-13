@@ -8,4 +8,13 @@
 go install -tags extended github.com/gohugoio/hugo@latest
 
 hugo version
+
+
 ```
+
+
+### References
+[Loveit] theme docs
+
+
+[loveit]:(https://hugoloveit.com/posts/)

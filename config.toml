@@ -392,10 +392,10 @@ summarylength = 5
     [privacy.googleAnalytics]
         disable = true
     [privacy.instagram]
-        disable = true
+        disable = false
     [privacy.twitter]
-        disable = true
+        disable = false
     [privacy.vimeo]
-        disable = true
+        disable = false
     [privacy.youtube]
-        disable = true
+        disable = false
