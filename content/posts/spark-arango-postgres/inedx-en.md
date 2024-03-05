@@ -8,7 +8,7 @@ draft: false
 Recently, we had to do poc using spark, cassandra, and arango for ml pipeline. lets see how to setup the following tool chain locally and setup a ml feature pipeline. 
 
 
-### java dependencies
+### java 8 dependencies
 
 > After jdk installation, set JAVA_HOME in this environment
 
