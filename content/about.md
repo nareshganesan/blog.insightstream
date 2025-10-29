@@ -51,8 +51,8 @@ Passionate engineer, likes research and solving real-world problems. Had the won
 - Gstreamer
 - Deepstream SDK
 
-If you would like to contact me regarding work please email [here](mailto:nareshganesan@insightstream.dev)
+If you would like to contact me regarding work please email [here](mailto:ng@insightstream.dev)
 
 If you would like to schedule a call use [calendly]. Please contact me first or I will decline the invite.
 
-[calendly]: https://calendly.com/nareshkumarganesan/30min
+[calendly]: https://calendly.com/ng-insightstream/30min
