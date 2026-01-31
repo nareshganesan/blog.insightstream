@@ -13,3 +13,10 @@ git remote add origin https://github.com/nareshganesan/blog.insightstream.git
 git remote -v
 git submodule add https://github.com/nareshganesan/uBlogger.git themes/uBlogger
 ```
+
+## local development
+> dependencies: hugo 
+
+```bash
+hugo server --bind 0.0.0.0 --port 1313
+```
