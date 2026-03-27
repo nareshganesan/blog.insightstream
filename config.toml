@@ -208,6 +208,12 @@ summarylength = 5
   description = "Stream of insights!"
   # site keywords
   keywords = ["insightstream", "nareshganesan", "insights", "blog", "naresh", "posts"]
+  # Analytics config
+  [params.analytics]
+    enable = true
+    [params.analytics.google]
+      id = "G-G16M2EYE4D"
+      anonymizeIP = true
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
