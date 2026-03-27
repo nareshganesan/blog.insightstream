@@ -18,8 +18,8 @@ summarylength = 5
 
 [author]
   name = "Naresh Ganesan"
-  email = "nareshganesan@insightstream.dev"
-  link = "https://github.com/nareshganesan/blog.insightstream"
+  email = "ng@insightstream.dev"
+  link = "https://github.com/nareshganesan"
 
 [frontmatter]
   date = [":git", "date", "publishDate", "lastmod"]
