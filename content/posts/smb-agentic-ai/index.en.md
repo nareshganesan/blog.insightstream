@@ -94,9 +94,9 @@ The real opportunity is not **automating manual replies.** It’s moving from **
 
 ---
 
-## 9. Subtle Product Layer (SigSense Positioning)
+## 9. Subtle Product Layer
 
-This is the direction we’re exploring — where conversations become structured signals that drive growth. We are building systems that don't just "talk" to your customers, but understand the underlying data to help you scale.
+The next frontier is turning conversations into structured signals that drive growth. The goal is to build systems that not only interact with customers, but also interpret the underlying data to help you scale.
 
 ---
 

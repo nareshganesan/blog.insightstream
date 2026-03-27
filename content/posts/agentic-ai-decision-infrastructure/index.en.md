@@ -94,7 +94,7 @@ The real opportunity is not replacing human effort—it is replacing **decision 
 
 ---
 
-## 9. Subtle Product Layer (SigSense Positioning)
+## 9. Subtle Product Layer
 
 This is the direction we’re exploring — where conversations stop being static data and become structured signals that drive autonomous growth systems.
 
