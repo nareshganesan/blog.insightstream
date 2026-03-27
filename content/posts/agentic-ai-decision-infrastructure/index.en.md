@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI is Not Automation — It’s Decision Infrastructure"
 date: 2026-03-26T13:00:00+05:30
-draft: true
+draft: false
 author: "Naresh Ganesan"
 
 # Hugo Routing
