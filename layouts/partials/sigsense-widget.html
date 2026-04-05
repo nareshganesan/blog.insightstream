@@ -1,0 +1,12 @@
+{{/* layouts/partials/sigsense-widget.html */}}
+
+{{- /* SigSense widget embed */ -}}
+<script src="https://sigsense.io/api/widget/bundle" defer></script>
+<script>
+  window.addEventListener("load", function () {
+    window.SigSenseWidget?.init({
+      publicKey: "proj_1775317356554_b70f9738",
+      apiBaseUrl: "https://sigsense.io"
+    });
+  });
+</script>
